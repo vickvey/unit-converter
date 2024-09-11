@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <head>
-	<title>Unit Converter</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Unit Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
-	<header>
-		<h1>Unit Converter</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Length</a></li>
-				<li><a href="#">Weight</a></li>
-				<li><a href="#">Temparature</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<div class="query">
-			<form id="length-form">
-				<label for="magnitude">Enter the length to convert</label>
-				<input type="text" name="magnitude" id="magnitude" />
+  <header>
+    <h1>Unit Converter</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Length</a></li>
+        <li><a href="#">Weight</a></li>
+        <li><a href="#">Temparature</a></li>
+      </ul>
+    </nav>
+  </header>
 
-				<label for="select-from">Unit to convert from</label>
-				<select id="select-from" name="select-from">
-					<option value="mm" selected>millimeter</option>
-					<option value="cm">centimeter</option>
-					<option value="m">meter</option>
-					<option value="km">kilometer</option>
-					<option value="inch">inch</option>
-					<option value="foot">foot</option>
-					<option value="yard">yard</option>
-					<option value="mile">mile</option>
-				</select>
+  <main>
+    <div class="query">
+      <form id="length-form">
+        <label for="magnitude">Enter the length to convert</label>
+        <input type="text" name="magnitude" id="magnitude" />
 
-				<label for="select-to">Unit to convert to</label>
-				<select id="select-to" name="select-to">
-					<option value="mm" selected>millimeter</option>
-					<option value="cm">centimeter</option>
-					<option value="m">meter</option>
-					<option value="km">kilometer</option>
-					<option value="inch">inch</option>
-					<option value="foot">foot</option>
-					<option value="yard">yard</option>
-					<option value="mile">mile</option>
-				</select>
-				
+        <label for="select-from">Unit to convert from</label>
+        <select id="select-from" name="select-from">
+          <option value="mm" selected>millimeter</option>
+          <option value="cm">centimeter</option>
+          <option value="m">meter</option>
+          <option value="km">kilometer</option>
+          <option value="inch">inch</option>
+          <option value="foot">foot</option>
+          <option value="yard">yard</option>
+          <option value="mile">mile</option>
+        </select>
+
+        <label for="select-to">Unit to convert to</label>
+        <select id="select-to" name="select-to">
+          <option value="mm" selected>millimeter</option>
+          <option value="cm">centimeter</option>
+          <option value="m">meter</option>
+          <option value="km">kilometer</option>
+          <option value="inch">inch</option>
+          <option value="foot">foot</option>
+          <option value="yard">yard</option>
+          <option value="mile">mile</option>
+        </select>
+
         <button>Convert</button>
-			</form>
-		</div>
-    <div class="results">
-      <!-- Add results through JavaScript -->
+      </form>
     </div>
-	</main>
+    <div id="results">
+      <!-- Add results through JavaScript -->
+      <h3>Result of your calculation</h3>
+      <div id="answer">
+        <!-- Add -->
+      </div>
+      <button id="reset">reset</button>
+    </div>
+  </main>
 
-	<footer>
-		<h3>Demo Footer Content</h3>
-	</footer>
+  <footer>
+    <h3>Demo Footer Content</h3>
+  </footer>
 
   <!-- JavaScript -->
-  <script src="logic.js"></script>
+  <!-- <script type="module" src="logic.js"></script> -->
   <script src="script.js"></script>
 </body>

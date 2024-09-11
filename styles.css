@@ -5,11 +5,10 @@
 
 nav ul {
   list-style-type: none;
-  display: flex;  
+  display: flex;
   justify-items: center;
 }
 
 ul li {
   display: inline;
 }
-
