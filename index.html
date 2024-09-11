@@ -9,23 +9,22 @@
 		<h1>Unit Converter</h1>
 		<nav>
 			<ul>
-				<li><a href="#!">Length</a></li>
-				<li><a href="#!">Weight</a></li>
-				<li><a href="#!">Temparature</a></li>
+				<li><a href="#">Length</a></li>
+				<li><a href="#">Weight</a></li>
+				<li><a href="#">Temparature</a></li>
 			</ul>
 		</nav>
-	<header>
+	</header>
 	
 	<main>
-		<div class="container">
-			<form>
+		<div class="query">
+			<form id="length-form">
 				<label for="magnitude">Enter the length to convert</label>
 				<input type="text" name="magnitude" id="magnitude" />
 
 				<label for="select-from">Unit to convert from</label>
-				<select id="select-from">
-					<option value="">--Please choose an option--</option>
-					<option value="mm">millimeter</option>
+				<select id="select-from" name="select-from">
+					<option value="mm" selected>millimeter</option>
 					<option value="cm">centimeter</option>
 					<option value="m">meter</option>
 					<option value="km">kilometer</option>
@@ -36,9 +35,8 @@
 				</select>
 
 				<label for="select-to">Unit to convert to</label>
-				<select id="select-to">
-					<option value="">--Please choose an option--</option>
-					<option value="mm">millimeter</option>
+				<select id="select-to" name="select-to">
+					<option value="mm" selected>millimeter</option>
 					<option value="cm">centimeter</option>
 					<option value="m">meter</option>
 					<option value="km">kilometer</option>
@@ -51,9 +49,16 @@
         <button>Convert</button>
 			</form>
 		</div>
+    <div class="results">
+      <!-- Add results through JavaScript -->
+    </div>
 	</main>
 
 	<footer>
 		<h3>Demo Footer Content</h3>
 	</footer>
+
+  <!-- JavaScript -->
+  <script src="logic.js"></script>
+  <script src="script.js"></script>
 </body>
